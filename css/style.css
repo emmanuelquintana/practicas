@@ -125,14 +125,17 @@ a {
 /* 48em = 768px */
 
 @media (min-width: 940px) {
-  .card {
-  width: 250px;
-  height: 254px;
-  margin: 0 auto;
-  background-color: #011522;
-  border-radius: 8px;
-  z-index: 1;
- }
+
+
+   .card {
+    width: 590px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+   }
+
   .header li {
     float: left;
   }
@@ -257,14 +260,14 @@ a {
     color: white;
     background: black;
   }
-.card {
-  width: 590px;
-  height: 254px;
-  margin: 0 auto;
-  background-color: #011522;
-  border-radius: 8px;
-  z-index: 1;
- }
+  .card {
+    width: 400px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+   }
  
  .tools {
   display: flex;
@@ -451,4 +454,26 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.2px);
 -webkit-backdrop-filter: blur(5.2px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+@media (min-width: 48em) {
+
+
+  .card {
+   width: 590px;
+   height: 254px;
+   margin: 0 auto;
+   background-color: #011522;
+   border-radius: 8px;
+   z-index: 1;
+  }
+}
+
+@media screen and (max-width: 48em) {
+
+  .logo{
+    font-size: 1.4em!important;
+  }
+  
 }
