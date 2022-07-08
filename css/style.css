@@ -17,7 +17,7 @@ a {
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 30;
 }
 
 .header ul {
@@ -125,6 +125,14 @@ a {
 /* 48em = 768px */
 
 @media (min-width: 940px) {
+  .card {
+  width: 250px;
+  height: 254px;
+  margin: 0 auto;
+  background-color: #011522;
+  border-radius: 8px;
+  z-index: 1;
+ }
   .header li {
     float: left;
   }
