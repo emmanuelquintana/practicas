@@ -301,6 +301,7 @@ a {
 .page-bg,
 .animation-wrapper {
   position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -426,4 +427,20 @@ a {
   z-index: 99;
   color: #666;
   text-decoration: none;
+}
+
+.botones{
+    padding:20px;
+    margin: 20px;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
