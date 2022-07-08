@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Actividad</title>
+</head>
+<body>
+  <header class="header">
+    <a href="" class="logo">Practicas Emmmanuel</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="/actividad/actividad1.html">Practica 1</a></li>
+      <li><a href="/actividad/actividad2.html">Practicas 2</a></li>
+      <li><a href="/actividad/actividad3.html">Practicas 3</a></li>
+      <li><a download ="infografias" href="">Descargar infografias</a></li>
+    </ul>
+  </header>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="fancy" onclick="ej1()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar ejemplo For 1</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a class="fancy" onclick="ej2()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar ejemplo For 2</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <a class="fancy" onclick="ej3()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar ejemplo while 1</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a class="fancy" onclick="ej4()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar ejemplo while 2</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a class="fancy" onclick="ej5()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar ejemplo Do while 1</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+  <a class="fancy" onclick="ej6()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar ejemplo Do while 2</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+      <script>
+        function ej1(){
+            //ejemplo for1
+            //pedir numeros
+            alert("imprime al numero que pides")
+            var numero = prompt("Ingrese un numero");
+
+            //for
+            for(var i = 1; i <= numero; i++){
+               alert(i);
+            }
+        }
+
+        function ej2(){
+          //metodo de ordenamiento de datos
+            //pedir numeros
+            alert("ordena datos")
+            var numero = prompt("Ingrese un numero");
+            var numero2 = prompt("Ingrese un numero");
+            var numero3 = prompt("Ingrese un numero");
+            var numero4 = prompt("Ingrese un numero");
+
+         //ordenar numeros por el metodo de la burbuja 
+            var numeros = [numero, numero2, numero3, numero4];
+            var aux;
+            for(var i = 0; i < numeros.length; i++){
+                for(var j = 0; j < numeros.length - 1; j++){
+                    if(numeros[j] > numeros[j + 1]){
+                        aux = numeros[j];
+                        numeros[j] = numeros[j + 1];
+                        numeros[j + 1] = aux;
+                    }
+                }
+            }
+            alert(numeros);
+
+         
+        
+          }
+        function ej3(){
+            //ejemplo while1
+            //pedir numeros
+            alert("imprime al numero que pides")
+            var numero = prompt("Ingrese un numero");
+
+            //while imprimir en un alert los numeros 
+            var i = 0;
+            while(i <= numero){
+               alert(i);
+               i++;
+            }
+
+        }
+
+        function ej4(){
+            //ejemplo while2
+            //hasta que color es verde
+            let color;
+            do{
+                color = prompt("Ingrese un color se detiene cuando sea verde");
+            }while(color != "verde");
+            alert("El color es verde");
+        }
+
+        function ej5(){
+            //ejemplo do while 1
+            //pide un numero y si el numero no es valido seguir pidiendo el numero del 1 al 10
+            let numero;
+            do{
+                numero = prompt("Ingrese un numero del 1 al 10");
+            }while(numero < 1 || numero > 10);
+            alert("El numero es valido");
+
+        }
+
+
+        function ej6(){
+            //ejemplo do while 2
+            //pedir una letra y si no es X seguir pidiendo
+            let letra;
+            do{
+                letra = prompt("Ingrese una letra si no es X seguir pidiendo");
+            }while(letra != "X" );
+            alert("La letra es X");
+        }
+           
+      </script>

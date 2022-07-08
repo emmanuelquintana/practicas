@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Actividad</title>
+</head>
+<body>
+  <header class="header">
+    <a href="" class="logo">Practicas Emmmanuel</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="/actividad/actividad1.html">Practica 1</a></li>
+      <li><a href="/actividad/actividad2.html">Practicas 2</a></li>
+      <li><a href="/actividad/actividad3.html">Practicas 3</a></li>
+      <li><a download ="infografias" href="">Descargar infografias</a></li>
+    </ul>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="fancy" onclick="forma1()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar Practica rangos de edad 1 forma</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a class="fancy" onclick="forma2()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar Practica rangos de edad 2 forma</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a class="fancy" onclick="forma3()">
+    <span class="top-key"></span>
+    <span class="text">Ejecutar Practica rangos de edad 3 forma</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+    <script>
+
+   function forma1(){
+
+        let edad;
+        edad=prompt("Ingrese su edad");
+        if(edad>=0 && edad<=3){
+            alert("Eres un bebe");
+        }
+    
+        else if(edad>=4 && edad<=12){
+            alert("Eres un niño");
+        }
+
+        else if(edad>=13 && edad<=18){
+            alert("Eres un adolecente");
+        }
+      
+        else if(edad>=18 && edad<=50){
+            alert("Eres un adulto");
+        }
+
+        else if(edad>=50){
+            alert("Eres un anciano");
+        }
+
+    
+}
+
+function forma2(){
+    let edad2 = parseInt(prompt("Escriba su Edad: "));
+
+		if(edad2 < 4){
+            alert("Eres un bebe");
+
+		} else if(edad2 < 11) {
+			alert("Eres un niño");
+
+		} else if(edad2 < 18) {
+			alert("Eres un adolecente");
+
+		}else if(edad2 < 31) {
+            alert("Eres un adulto");
+
+		}else if(edad2 < 61) {
+			alert("Eres un señor");
+
+		}else {
+			alert("Eres un adulto mayor");
+		}
+
+}
+
+function forma3(){
+    let edad3 = parseInt(prompt("Escriba su Edad: "));
+
+		if(edad3 > 0 && edad3 < 4){
+			alert("Eres un bebe");
+
+		} if(edad3 > 3 && edad3 < 11) {
+			alert("Eres un niño");
+
+		} if(edad3 > 10 && edad3 < 18) {
+			alert("Eres un joven");
+
+		} if(edad3 > 17 && edad3 < 31) {
+			alert("Eres un adulto");
+
+		} if(edad3 > 30 && edad3 < 61) {
+			alert("Eres un señor");
+
+		} if(edad3 > 60) {
+			alert("Eres un adulto mayor");
+		}
+    }
+    </script>
+
+
+
+
+</body>
+</html>
